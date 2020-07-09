@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Division Lab Using JS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <!-- Adding JS to our page -->
+    
+    <script type="text/javascript">
+      //alert('Niko hapa');
+    </script>
+    <!-- External
+    Adding JS using an external script sheet through the script tag
+    using the src attribute
+  -->
+    <!-- You can either add JS on the head section or before the close of the body depending on
+    your specification
+  -->
+
+
+  <!-- it would not be wise to put your JS in the head if you need the HTML to be loaded first -->
+
+  </head>
+  <body>
+    <!-- We will use Bootstarp for syling-->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <br>
+          <!-- Adding an alert -->
+          <div class="alert alert-secondary" role="alert">
+            Dividing your numbers
+          </div>
+          <div class="form-group" id="num1Div">
+            <label for="num1">First Number</label>
+          
+            <input type="number" name="num1" id="num1" value="" class="form-control">
+            <span style='display:none;' id="num1Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
+          </div>
+
+          <div class="form-group">
+            <label for="num2">Second Number</label>
+            <input type="number" name="num2" id="num2" value="" class="form-control">
+            <span style='display:none;' id="num2Error" class="text-danger"> <i class="fas fa-bomb"></i> </span>
+          </div>
+
+          <button id="divide-them" class="btn btn-primary" name="divide-them" type="button" name="button" onclick="divideThem()">
+           <i class="fa fa-divide"></i>  Divide Them!
+          </button>
+        </div>
+
+        <div class="col-md-4">
+          <br> 
+          <div class="alert alert-success" role="alert">
+           <i class="fas fa-smile"></i>  Results
+          </div>
+          <h4 class='text-primary' id="results"></h4>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--script tags mostly come at the end of the code/body-->
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" charset="utf-8"></script>
+    <!-- Font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
+
+    <script src="division.js" charset="utf-8"></script>
+  
+  </body>
+</html>
